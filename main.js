@@ -7,3 +7,10 @@ bot.on('ready',() => {
 }) 
 
 bot.login(configg.token);
+
+bot.on('message',message=>{
+    if(message.content === "ping"){
+       message.reply("pong");
+       console.log('ping pong');
+    }
+});
