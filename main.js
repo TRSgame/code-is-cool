@@ -24,4 +24,7 @@ bot.on('message',message=>{
        message.reply("pong");
        console.log('ping pong');
     }
+    if(message.content === "//if") {
+      message.channel.send("```if``` veut dire 'si' en français, il permet de tester une condition :\nexemple : ```JavaScript if(message.content === 'ping'){\nmessage.reply('pong');\nconsole.log('ping pong');\n}```\ndans ce cas si le message est `ping`, on répondra `pong` et dans la console sera dit `ping pong`.")
+    }
 });
